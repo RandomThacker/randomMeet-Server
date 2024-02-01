@@ -7,7 +7,7 @@ const app = express();
 const isDev = app.settings.env === "development";
 const URL = isDev
   ? "http://localhost:3000"
-  : "https://samvad-setu-gyandeeparyan.vercel.app/";
+  : "https://randommeet.vercel.app/";
 
 app.use(cors({ origin: URL }));
 app.use(express.json({ extended: true }));
